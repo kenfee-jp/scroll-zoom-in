@@ -18,11 +18,28 @@
 </head>
 ```
 
-### 2.jQueryの読み込み
-jQueryを読み込むコードを<head></head>内に記述してください。
+### 2.jQueryおよびライブラリの読み込み
+以下のコードを<head></head>内に記述してください。
+ただし行の順番は変えないでください。
 
 ```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenfee-jp/scroll-zoom-in@v1.0.1/scroll-zoom-in.css">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kenfee-jp/scroll-zoom-in@v1.0.1/scroll-zoom-in.js"></script>
 ```
 
-### 3.
+### 3.アニメーションをかけたい要素にクラス名を以下の通りに追加してください。
+親要素のクラスに`scroll-zoom-in`,フェードインさせたい要素のクラスに`zoom-target`を追加。
+大きさを調整したい場合は、`Class-1` `Class-2` `Class-3`のように追加クラスでCSSを調整できます。
+
+```html
+<div class="Class-1 Class-2 scroll-zoom-in">
+    <img src="" class="Class-3 zoom-target">
+</div>
+```
+
+```html
+<div class="Class-1 Class-2 scroll-zoom-in">
+    <button class="Class-3 zoom-target">
+</div>
+```
